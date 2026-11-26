@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register | Lumina College</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="21" fill="#F9E08B" stroke="#3B2A57" stroke-width="3"/>
+          <path d="M8 20 L24 12 L40 20 L24 28Z" fill="#3B2A57"/>
+          <path d="M14 25 V33 Q24 39 34 33 V25 L24 30Z" fill="#fff" stroke="#3B2A57" stroke-width="2"/>
+        </svg>
+        <h1>Lumina College<small>ARTS AND SCIENCE</small></h1>
+      </div>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="register.html" class="active">Register</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Student registration</h2>
+        <p>Fill in your details and we will contact you within two working days.</p>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Personal details</legend>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+            <label for="dob">Date of birth</label>
+            <input type="date" id="dob" name="dob">
+            <p class="inline"><strong>Gender:</strong><br><label><input type="radio" name="g" value="f">Female</label><label><input type="radio" name="g" value="m">Male</label><label><input type="radio" name="g" value="o">Other</label></p>
+          </fieldset>
+          <fieldset>
+            <legend>Course details</legend>
+            <label for="course">Course</label>
+            <select id="course" name="course">
+              <option>B.Sc Computer Science</option>
+              <option>B.Sc Physics</option>
+              <option>B.Com Honours</option>
+              <option>B.A English Literature</option>
+              <option>BBA</option>
+            </select>
+            <label for="mark">12th percentage</label>
+            <input type="text" id="mark" name="mark">
+            <p class="inline"><strong>Facilities needed:</strong><br><label><input type="checkbox" name="f" value="hostel">Hostel</label><label><input type="checkbox" name="f" value="bus">College bus</label><label><input type="checkbox" name="f" value="scholar">Scholarship</label></p>
+            <label for="msg">Anything else we should know</label>
+            <textarea id="msg" name="msg" rows="3"></textarea>
+          </fieldset>
+          <button type="submit">Submit registration</button>
+          <button type="reset">Clear form</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Lumina College of Arts and Science, Chennai. <a href="register.html">Apply today</a></p>
+    </footer>
+  </body>
+</html>
